@@ -7,11 +7,19 @@
 }
 
 body {
-  background: url(patinhas.svg);
+  background: url(Patinhas.svg);
   background-size: cover;
   font-family: comfortaa ;
   font-weight: 600;
-  
+  font-size: 18px;
+}
+
+section {
+  display: flex;
+}
+
+h2 {
+  margin: 30px 0 25px 0;
 }
 
 .cabecalho{
@@ -23,9 +31,45 @@ body {
   border-bottom: 2px solid black;
 }
 
+.container {
+  padding: 16px;
+  border: 1px solid;
+  min-height: 100%;
+  width: 50%;
+}
+
 .dados-pessoais {
   display: flex;
   flex-direction: column;
+  border-bottom: 2px dashed gray;
+  padding: 25px;
+}
+
+.container-input {
+  display: flex;
+  justify-content: space-between;
+  width: 450px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.sexo {
+  display: flex;
+}
+.sexo-radio{
+  margin: 0px 10px 25px 20px; /* cima, direita, baixo, esquerda*/
+  height: 15px;
+  width: 15px;
+ }
+
+ .label-emergencia {
+    margin-bottom: 12px;
+ }
+ .contact-emercencia {
+    padding: 10px;
+ }
+
+ .endereco {
   border-bottom: 2px dashed gray;
   padding: 25px;
 }
@@ -40,41 +84,46 @@ body {
  }
 
 .add-photo {
-  height:650px;
+  height:200px;
   width: 250px;
   position: absolute;
-  left: 1500px;
-  top: 550px;
+  left: 1640px;
+  top: 100px;
 }
 
-.endereco {
-  border-bottom: 2px dashed gray;
-  padding: 25px;
+.input-date {
+  padding: 15px;
+  width: 385px;
 }
 
+.observacoes {
 
+  width: 300px;
+}
 input {
-  height: 35px;
+  height: 45px;
   width: 300px;
   border-radius: 10px;
   align-items: center;
   background: transparent;
-  border-color: rgb(226, 215, 215);
+  border: 1px solid;
 }
 
-h2 {
-  padding: 20px;
-  font-weight: bold;
- }
+textarea {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid;
+}
 
 button {
   background: rgb(46, 46, 46);
   width: 180px;
-  height: 35px;
+  height: 50px;
   border-radius: 10px;
   box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
   font-family: comfortaa, sans-serif;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 600;
   color: white;
   }
