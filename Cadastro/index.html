@@ -19,11 +19,17 @@
         <h2>Dados Pessoais</h2>
         <div class="container-input">
           <label for="nome">Nome</label>
-          <input type="text" name="nome" id="nome" />
+          <input
+            clas="teste"
+            type="text"
+            name="nome"
+            id="nome"
+            required="true"
+          />
         </div>
         <div class="container-input">
           <label for="Sobrenome">Sobrenome</label>
-          <input type="text" name="sobrenome" id="sobrenome" />
+          <input type="text" name="sobrenome" id="sobrenome" required="true" />
         </div>
         <div class="sexo">
           <input type="radio" name="sexo" id="sexo" class="sexo-radio" />
@@ -131,6 +137,7 @@
             cols="30"
             rows="10"
             class="observacoes"
+            required
           ></textarea>
         </div>
       </div>

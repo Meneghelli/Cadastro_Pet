@@ -20,6 +20,8 @@ section {
 
 h2 {
   margin: 30px 0 25px 0;
+  border-bottom: 0.5px solid black;
+  
 }
 
 .cabecalho{
@@ -33,7 +35,6 @@ h2 {
 
 .container {
   padding: 16px;
-  border: 1px solid;
   min-height: 100%;
   width: 50%;
 }
@@ -84,11 +85,11 @@ h2 {
  }
 
 .add-photo {
-  height:200px;
+  height:350px;
   width: 250px;
   position: absolute;
   left: 1640px;
-  top: 100px;
+  top: 120px;
 }
 
 .input-date {
@@ -100,6 +101,9 @@ h2 {
 
   width: 300px;
 }
+.observacoes:required ~ .observacoes::after{
+  background-color: red;
+}
 input {
   height: 45px;
   width: 300px;
@@ -107,6 +111,18 @@ input {
   align-items: center;
   background: transparent;
   border: 1px solid;
+  outline: none;
+} 
+
+ input:hover {
+  border: 1px solid green;
+
+} 
+
+input:required ~ input::after {
+  content: "(Você precisa preencher todos os campos!)";
+  border: 1px solid red;
+  background: red;
 }
 
 textarea {
@@ -126,6 +142,7 @@ button {
   font-size: 20px;
   font-weight: 600;
   color: white;
+  cursor: pointer;
   }
 
 footer {
